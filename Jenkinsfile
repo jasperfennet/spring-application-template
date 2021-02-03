@@ -10,7 +10,6 @@ pipeline {
                 regexpFilterExpression: 'refs/heads/' + BRANCH_NAME,
                 token: 'nl.jasperfennet.template_branch_trigger',
                 printContributedVariables: true,
-                printPostContent: true,
         )
     }
     agent any
