@@ -11,7 +11,7 @@ pipeline {
                 token: 'nl.jasperfennet.template_branch_trigger',
                 printContributedVariables: true,
                 printPostContent: true,
-                silentResponese: false
+                silentResponse: false
         )
     }
     agent none
