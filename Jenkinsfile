@@ -1,7 +1,6 @@
 pipeline {
     triggers {
         GenericTrigger(
-                regexpFilterExpression: 'refs/heads/' + BRANCH_NAME,
                 token: 'nl.jasperfennet.template_branch_trigger',
         )
     }
