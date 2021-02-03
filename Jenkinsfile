@@ -14,7 +14,7 @@ pipeline {
                 silentResponese: false
         )
     }
-
+    agent none
     stages {
         stage("Build") {
             steps {
