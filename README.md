@@ -1,3 +1,4 @@
 # spring-application-template
 
-Boilerplate for production ready applications
+Boilerplate for production ready applications v0.1
+
