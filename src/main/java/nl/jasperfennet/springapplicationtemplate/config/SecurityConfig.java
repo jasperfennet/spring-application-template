@@ -23,16 +23,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("jasper").password(passwordEncoder().encode("jasper"))
-                .authorities("ROLE_ADMIN");
+                .withUser("admin").password(passwordEncoder().encode("admin"))
+                .authorities("ROLE_ADMIN")
+                .and()
+                .withUser("user").password(passwordEncoder().encode("user"))
+                .authorities("ROLE_USER");
     }
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/**/open-api**").permitAll()
-                .antMatchers(HttpMethod.GET, "/**/swagger-ui/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/**/actuator/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/open-api/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/swagger-ui/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/actuator/health").permitAll()
                 .anyRequest().authenticated();
     }
 
