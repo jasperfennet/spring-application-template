@@ -1,3 +1,9 @@
+/*
+ * =================
+ * Copyright (c) 2021.  Jasper Fennet Solutions, All rights reserved
+ * =================
+ */
+
 package nl.jasperfennet.springapplicationtemplate.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
