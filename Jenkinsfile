@@ -1,3 +1,9 @@
+/*
+ * =================
+ * Copyright (c) 2021.  Jasper Fennet Solutions, All rights reserved
+ * =================
+ */
+
 pipeline {
     triggers {
         GenericTrigger(
