@@ -16,7 +16,7 @@
     </parent>
     <groupId>nl.jasperfennet</groupId>
     <artifactId>spring-application-template</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>spring-application-template</name>
     <description>Boilerplate for Spring applications</description>
     <properties>
