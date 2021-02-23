@@ -19,7 +19,7 @@ pipeline {
         }
     }
     post{
-        succes {
+        success {
             sh 'echo "${env.BRANCH_NAME}" '
             sh 'echo "Creating Dockerimage'
             sh 'mvn spring-boot:build-image -Dspring-boot.build-image.imageName=jasperfennet/spring-application-template'
