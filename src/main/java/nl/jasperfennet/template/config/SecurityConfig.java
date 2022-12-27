@@ -4,7 +4,7 @@
  * =================
  */
 
-package nl.jasperfennet.springapplicationtemplate.config;
+package nl.jasperfennet.template.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +22,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/open-api/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/swagger-ui/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/actuator/health").permitAll()
+                .antMatchers(HttpMethod.GET, "/actuator/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/").permitAll()
+                .antMatchers(HttpMethod.GET, "/rapportage").permitAll()
                 .anyRequest().authenticated();
     }
 

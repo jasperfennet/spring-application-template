@@ -1,0 +1,41 @@
+07-01-2022 23:16:31.402 [main] INFO  n.j.s.SpringApplicationTemplateApplication.logStarting - Starting SpringApplicationTemplateApplication using Java 1.8.0_281 on JMF-Desktop with PID 11720 (G:\Programming Projects\01. Jasper Fennet\99. Templates\spring-application-template\target\classes started by Jasper Fennet in G:\Programming Projects\01. Jasper Fennet\99. Templates\spring-application-template)
+07-01-2022 23:16:31.412 [main] INFO  n.j.s.SpringApplicationTemplateApplication.logStartupProfileInfo - The following profiles are active: dev
+07-01-2022 23:16:32.098 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 443 (https)
+07-01-2022 23:16:32.103 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-01-2022 23:16:32.105 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+07-01-2022 23:16:32.159 [main] INFO  o.a.c.c.C.[.[localhost].[/api].log - Initializing Spring embedded WebApplicationContext
+07-01-2022 23:16:32.159 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 719 ms
+07-01-2022 23:16:32.351 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+07-01-2022 23:16:32.745 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: d32358c4-030a-4fe9-9124-36fdb6ebe557
+
+07-01-2022 23:16:32.787 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e17a321, org.springframework.security.web.context.SecurityContextPersistenceFilter@29fa6b65, org.springframework.security.web.header.HeaderWriterFilter@48904d5a, org.springframework.security.web.csrf.CsrfFilter@557a84fe, org.springframework.security.web.authentication.logout.LogoutFilter@5478ce1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47406941, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f2de715, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@521bb1a4, org.springframework.security.web.session.SessionManagementFilter@6504a875, org.springframework.security.web.access.ExceptionTranslationFilter@67cefd84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7343922c]
+07-01-2022 23:16:32.797 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+07-01-2022 23:16:33.488 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 443 (https) with context path '/api'
+07-01-2022 23:16:33.497 [main] INFO  n.j.s.SpringApplicationTemplateApplication.logStarted - Started SpringApplicationTemplateApplication in 2.352 seconds (JVM running for 3.374)
+07-01-2022 23:16:34.228 [RMI TCP Connection(3)-172.29.64.1] INFO  o.a.c.c.C.[.[localhost].[/api].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-01-2022 23:16:34.229 [RMI TCP Connection(3)-172.29.64.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-01-2022 23:16:34.229 [RMI TCP Connection(3)-172.29.64.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 0 ms
+07-01-2022 23:17:41.977 [https-jsse-nio-443-exec-3] INFO  o.s.api.AbstractOpenApiResource.getOpenApi - Init duration for springdoc-openapi is: 52 ms
+07-01-2022 23:52:02.171 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+07-01-2022 23:52:07.575 [main] INFO  n.j.t.SpringApplicationTemplateApplication.logStarting - Starting SpringApplicationTemplateApplication using Java 1.8.0_281 on JMF-Desktop with PID 22140 (G:\Programming Projects\01. Jasper Fennet\99. Templates\spring-application-template\target\classes started by Jasper Fennet in G:\Programming Projects\01. Jasper Fennet\99. Templates\spring-application-template)
+07-01-2022 23:52:07.578 [main] INFO  n.j.t.SpringApplicationTemplateApplication.logStartupProfileInfo - The following profiles are active: dev
+07-01-2022 23:52:08.484 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 443 (https)
+07-01-2022 23:52:08.491 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-01-2022 23:52:08.491 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+07-01-2022 23:52:08.553 [main] INFO  o.a.c.c.C.[.[localhost].[/api].log - Initializing Spring embedded WebApplicationContext
+07-01-2022 23:52:08.553 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 933 ms
+07-01-2022 23:52:08.785 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+07-01-2022 23:52:09.269 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 3fef5577-c5e3-48f0-8436-cb6d9adfbe3a
+
+07-01-2022 23:52:09.329 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f5f474c, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ec8754, org.springframework.security.web.header.HeaderWriterFilter@7a66c35a, org.springframework.security.web.csrf.CsrfFilter@5eb87338, org.springframework.security.web.authentication.logout.LogoutFilter@28b523a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19662208, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dbab232, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58a3d521, org.springframework.security.web.session.SessionManagementFilter@546ed2a0, org.springframework.security.web.access.ExceptionTranslationFilter@1b8aaeab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a30722c]
+07-01-2022 23:52:09.344 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+07-01-2022 23:52:10.048 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 443 (https) with context path '/api'
+07-01-2022 23:52:10.059 [main] INFO  n.j.t.SpringApplicationTemplateApplication.logStarted - Started SpringApplicationTemplateApplication in 2.863 seconds (JVM running for 4.033)
+07-01-2022 23:52:10.335 [RMI TCP Connection(1)-172.29.64.1] INFO  o.a.c.c.C.[.[localhost].[/api].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-01-2022 23:52:10.335 [RMI TCP Connection(1)-172.29.64.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-01-2022 23:52:10.336 [RMI TCP Connection(1)-172.29.64.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+07-01-2022 23:53:00.173 [https-jsse-nio-443-exec-5] INFO  o.s.api.AbstractOpenApiResource.getOpenApi - Init duration for springdoc-openapi is: 50 ms

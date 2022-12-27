@@ -4,7 +4,7 @@
  * =================
  */
 
-package nl.jasperfennet.springapplicationtemplate.controller;
+package nl.jasperfennet.template.controller;
 
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -21,13 +21,20 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class HelloWorldController {
 
-    @GetMapping("")
+    @GetMapping("/")
     @ResponseStatus(HttpStatus.OK)
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "User greeted properly", content = {@Content(mediaType = "application/json")}),
             @ApiResponse(responseCode = "400", description = "Name not provided"),
     })
     public String helloWorld(@Parameter(description = "Name used in greetings") @RequestParam String name) {
+        log.info(" hallo");
         return "Hello " + name;
+    }
+
+    @GetMapping(value = "/rapportage", produces = "text/plain")
+    public String test() {
+        double x = Math.random();
+        return String.format("jasper_123 %f", x);
     }
 }

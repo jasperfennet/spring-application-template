@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ =================
-  ~ Copyright (c) 2021.  Jasper Fennet Solutions, All rights reserved
-  ~ =================
-  -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -22,38 +16,26 @@
     <properties>
         <!-- Versions -->
         <h2.version>1.4.200</h2.version>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <lombok.version>1.18.16</lombok.version>
         <spring.doc.version>1.5.2</spring.doc.version>
+        <prometheus.version>1.8.1</prometheus.version>
+        <!-- Spring starter Versions-->
         <spring.starter.actuator.version>2.2.5.RELEASE</spring.starter.actuator.version>
         <spring.starter.security.version>2.4.2</spring.starter.security.version>
         <spring.starter.web.version>2.4.0</spring.starter.web.version>
-        <!-- Test Version -->
+        <!-- Test Versions -->
         <spring.security.test.version>5.4.2</spring.security.test.version>
         <spring.test.version>2.4.0</spring.test.version>
         <!-- Build Versions-->
         <build.jacoco.version>0.8.2</build.jacoco.version>
     </properties>
     <dependencies>
-        <!-- H2 -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
         </dependency>
-        <!-- Lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <!-- Spring Doc-->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>${spring.doc.version}</version>
-        </dependency>
+
         <!-- Spring Starter Dependencies -->
         <!-- Actuator -->
         <dependency>
@@ -73,6 +55,41 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.starter.web.version}</version>
         </dependency>
+        <!-- Other Dependencies-->
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Spring Doc-->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>${spring.doc.version}</version>
+        </dependency>
+        <!-- Prometheus-->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+        <!-- Prometheus-->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-elastic</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.twilio.sdk/twilio -->
+        <dependency>
+            <groupId>com.twilio.sdk</groupId>
+            <artifactId>twilio</artifactId>
+            <version>8.29.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- Testing Dependencies -->
         <!-- Testing -->
         <dependency>
